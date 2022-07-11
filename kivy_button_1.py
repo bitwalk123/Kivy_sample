@@ -13,11 +13,11 @@ class KivyButton(BoxLayout):
         print('%s がクリックされました。' % instance.text)
 
 
-class TestApp(App):
+class ExampleApp(App):
     def build(self):
         self.title = 'Buttons'
         return KivyButton()
 
 
 if __name__ == '__main__':
-    TestApp().run()
+    ExampleApp().run()
