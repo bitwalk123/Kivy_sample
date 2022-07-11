@@ -4,9 +4,6 @@ from kivy.core.window import Window
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.button import Button
 
-# Reference:
-# https://note.com/npaka/n/nc18a554cc336
-
 Window.size = (200, 200)
 
 
