@@ -33,7 +33,7 @@ class KivyButton(BoxLayout):
 
 class ExampleApp(App):
     def build(self):
-        self.title = 'Button'
+        self.title = 'Buttons'
         return KivyButton()
 
 
