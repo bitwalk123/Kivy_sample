@@ -13,7 +13,7 @@ Window.size = (200, 200)
 class KivyButton(BoxLayout):
     def __init__(self):
         super().__init__()
-        self.orientation='vertical'
+        self.orientation = 'vertical'
         self.init_ui()
 
     def init_ui(self):
