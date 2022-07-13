@@ -15,7 +15,7 @@ class KivyToggleButton(BoxLayout):
 
 class ExampleApp(App):
     def build(self):
-        self.title = 'ToggleButtons'
+        self.title = 'ToggleButtons (group)'
         return KivyToggleButton()
 
 
