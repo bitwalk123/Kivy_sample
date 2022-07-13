@@ -1,0 +1,21 @@
+<KivyToggleButton>:
+    orientation: 'vertical'
+    size: root.size
+
+    ToggleButton:
+        id: tgb_a
+        text: "トグルボタンＡ"
+        group: "tgb"
+        on_press: root.on_togglebutton_pressed(self)
+
+    ToggleButton:
+        id: tgb_b
+        text: "トグルボタンＢ"
+        group: "tgb"
+        on_press: root.on_togglebutton_pressed(self)
+
+    ToggleButton:
+        id: tgb_c
+        text: "トグルボタンＣ"
+        group: "tgb"
+        on_press: root.on_togglebutton_pressed(self)
