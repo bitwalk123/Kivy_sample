@@ -1,0 +1,18 @@
+<KivyCheckBox>:
+    orientation: 'vertical'
+    size: root.size
+
+    CheckBox:
+        id: chb_a
+        active: 0
+        on_state: root.on_checkbox_changed(self, self.active)
+
+    CheckBox:
+        id: chb_b
+        active: 0
+        on_state: root.on_checkbox_changed(self, self.active)
+
+    CheckBox:
+        id: chb_c
+        active: 0
+        on_state: root.on_checkbox_changed(self, self.active)

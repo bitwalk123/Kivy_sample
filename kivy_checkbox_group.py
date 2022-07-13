@@ -14,13 +14,13 @@ class KivyCheckBox(BoxLayout):
         self.init_ui()
 
     def init_ui(self):
-        chb_a = CheckBox()
+        chb_a = CheckBox(group='chb')
         chb_a.bind(active=self.on_checkbox_changed)
         self.add_widget(chb_a)
-        chb_b = CheckBox()
+        chb_b = CheckBox(group='chb')
         chb_b.bind(active=self.on_checkbox_changed)
         self.add_widget(chb_b)
-        chb_c = CheckBox()
+        chb_c = CheckBox(group='chb')
         chb_c.bind(active=self.on_checkbox_changed)
         self.add_widget(chb_c)
 
@@ -30,7 +30,7 @@ class KivyCheckBox(BoxLayout):
 
 class ExampleApp(App):
     def build(self):
-        self.title = 'CheckBoxes'
+        self.title = 'CheckBoxes (group)'
         return KivyCheckBox()
 
 
