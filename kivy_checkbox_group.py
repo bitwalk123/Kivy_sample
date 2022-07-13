@@ -25,7 +25,7 @@ class KivyCheckBox(BoxLayout):
         self.add_widget(chb_c)
 
     def on_checkbox_changed(self, instance, value):
-        print('The checkbox is %s, %d' % (instance, value))
+        print('チェックボックス %s は %d です。' % (instance, value))
 
 
 class ExampleApp(App):
