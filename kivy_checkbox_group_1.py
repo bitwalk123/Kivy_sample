@@ -3,7 +3,6 @@ from kivy.app import App
 from kivy.core.window import Window
 from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.checkbox import CheckBox
 
 Builder.load_file('kivy_checkbox_group_1.kv')
 Window.size = (200, 200)
