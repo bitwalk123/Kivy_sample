@@ -14,10 +14,31 @@ class KivyTextInput(BoxLayout):
         self.init_ui()
 
     def init_ui(self):
-        txt1 = TextInput()
-        self.add_widget(txt1)
-        txt2 = TextInput(multiline=False)
-        self.add_widget(txt2)
+        txt_a = TextInput(size_hint=(1, .8))
+        txt_a.bind(
+            focus=self.on_focus,
+            text=self.on_text,
+        )
+        self.add_widget(txt_a)
+        txt_b = TextInput(multiline=False, size_hint=(1, .2))
+        txt_b.bind(
+            focus=self.on_focus,
+            on_text_validate=self.on_enter,
+            text=self.on_text,
+        )
+        self.add_widget(txt_b)
+
+    def on_focus(self, instance, value):
+        if value:
+            print('%s がフォーカスされました。' % instance)
+        else:
+            print('%s のフォーカスが外れました。' % instance)
+
+    def on_enter(self, instance):
+        print('%s で改行キーが押されました。' % instance)
+
+    def on_text(self, instance, value):
+        print('ウィジェット %s の入力:\n%s' % (instance, value))
 
 
 class ExampleApp(App):
