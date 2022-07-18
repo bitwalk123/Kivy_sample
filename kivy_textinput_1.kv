@@ -5,8 +5,13 @@
     TextInput:
         id: txt_a
         size_hint: (1, .8)
+        on_focus: root.on_focus(self, self.focus)
+        on_text: root.on_text(self, self.text)
 
     TextInput:
         id: txt_b
         multiline: False
         size_hint: (1, .2)
+        on_text_validate: root.on_enter(self)
+        on_focus: root.on_focus(self, self.focus)
+        on_text: root.on_text(self, self.text)
