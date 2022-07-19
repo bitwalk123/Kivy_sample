@@ -4,7 +4,7 @@ from kivy.core.window import Window
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.video import Video
 
-Window.size = (200, 200)
+#Window.size = (200, 200)
 
 
 class KivyImage(BoxLayout):

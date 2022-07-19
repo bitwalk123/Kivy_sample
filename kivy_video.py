@@ -7,7 +7,7 @@ from kivy.core.window import Window
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.video import Video
 
-Window.size = (270, 480)
+#Window.size = (270, 480)
 
 
 class KivyVideo(BoxLayout):
@@ -17,7 +17,7 @@ class KivyVideo(BoxLayout):
         self.init_ui()
 
     def init_ui(self):
-        vdo = Video(source='sample.avi', play=True)
+        vdo = Video(source='sample.mp4', play=True)
         self.add_widget(vdo)
 
 
