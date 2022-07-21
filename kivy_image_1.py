@@ -1,21 +1,15 @@
 import japanize_kivy
 from kivy.app import App
 from kivy.core.window import Window
+from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.image import Image
 
+Builder.load_file('kivy_image_1.kv')
 Window.size = (200, 200)
 
 
 class KivyImage(BoxLayout):
-    def __init__(self):
-        super().__init__()
-        self.orientation = 'vertical'
-        self.init_ui()
-
-    def init_ui(self):
-        img = Image(source='sample.jpg')
-        self.add_widget(img)
+    pass
 
 
 class ExampleApp(App):
