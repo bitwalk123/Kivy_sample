@@ -1,0 +1,11 @@
+<KivySlider>:
+    orientation: 'vertical'
+    size: root.size
+
+    Slider:
+        id: sld
+        min: 0
+        max: 100
+        step: 1
+        value: 0
+        on_value: root.on_slider_move(self, self.value)
