@@ -1,0 +1,14 @@
+<KivyProgressBar>:
+    pbar: progress
+    orientation: 'vertical'
+    size: root.size
+
+    ProgressBar:
+        id: progress
+        max: 100
+
+    Button:
+        id: btn
+        text: "START"
+        on_press: root.demo(self)
+
