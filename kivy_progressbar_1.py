@@ -1,7 +1,6 @@
 import threading
 import time
 
-import japanize_kivy
 from kivy.app import App
 from kivy.core.window import Window
 from kivy.lang import Builder
