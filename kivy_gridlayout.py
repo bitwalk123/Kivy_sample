@@ -8,7 +8,7 @@ from kivy.uix.gridlayout import GridLayout
 Window.size = (200, 200)
 
 
-class KivyBoxLayout(GridLayout):
+class KivyGridLayout(GridLayout):
     def __init__(self):
         super().__init__()
         self.cols = 3
@@ -44,7 +44,7 @@ class KivyBoxLayout(GridLayout):
 class ExampleApp(App):
     def build(self):
         self.title = 'GridLayout'
-        return KivyBoxLayout()
+        return KivyGridLayout()
 
 
 if __name__ == '__main__':
