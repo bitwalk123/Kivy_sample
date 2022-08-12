@@ -1,0 +1,16 @@
+<KivyAnchorLayout>:
+    anchor_x: 'right'
+    anchor_y: 'bottom'
+    size: root.size
+
+    Button:
+        id: btn_a
+        text: "ボタンＡ"
+        size_hint:(.67, .67)
+        on_press: root.on_button_pressed(self)
+
+    Button:
+        id: btn_b
+        text: "ボタンＢ"
+        size_hint:(.33, .33)
+        on_press: root.on_button_pressed(self)

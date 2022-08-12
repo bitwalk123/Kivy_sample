@@ -7,7 +7,7 @@ from kivy.uix.button import Button
 Window.size = (200, 200)
 
 
-class KivyButton(AnchorLayout):
+class KivyAnchorLayout(AnchorLayout):
     def __init__(self):
         super().__init__()
         self.anchor_x = 'right'
@@ -29,7 +29,7 @@ class KivyButton(AnchorLayout):
 class ExampleApp(App):
     def build(self):
         self.title = 'AnchorLayout'
-        return KivyButton()
+        return KivyAnchorLayout()
 
 
 if __name__ == '__main__':
