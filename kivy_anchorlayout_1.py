@@ -1,4 +1,7 @@
+import sys
+
 import japanize_kivy
+import kivy
 from kivy.app import App
 from kivy.core.window import Window
 from kivy.lang import Builder
@@ -20,4 +23,8 @@ class ExampleApp(App):
 
 
 if __name__ == '__main__':
+    # version information
+    print(sys.version)
+    print(kivy.__version__)
+    #
     ExampleApp().run()
