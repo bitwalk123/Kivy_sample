@@ -19,14 +19,14 @@ class KivyFloatLayout(FloatLayout):
         btn_a = Button(
             text='ボタンＡ',
             size_hint=(.4, .3),
-            pos_hint={'x':.1, 'y':.6}
+            pos_hint={'x': .1, 'y': .6}
         )
         btn_a.bind(on_press=self.on_button_pressed)
         self.add_widget(btn_a)
         btn_b = Button(
             text='ボタンＢ',
             size_hint=(.4, .3),
-            pos_hint={'x':.5, 'y':.1}
+            pos_hint={'x': .5, 'y': .1}
         )
         btn_b.bind(on_press=self.on_button_pressed)
         self.add_widget(btn_b)
