@@ -1,0 +1,16 @@
+<KivyFloatLayout>:
+    size: root.size
+
+    Button:
+        id: btn_a
+        text: "ボタンＡ"
+        size_hint:(.4, .3)
+        pos_hint:{'x': .1, 'y': .6}
+        on_press: root.on_button_pressed(self)
+
+    Button:
+        id: btn_b
+        text: "ボタンＢ"
+        size_hint:(.4, .3)
+        pos_hint:{'x': .5, 'y': .1}
+        on_press: root.on_button_pressed(self)
