@@ -5,13 +5,14 @@ import japanize_kivy
 from kivy.app import App
 from kivy.core.window import Window
 from kivy.lang import Builder
+from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.relativelayout import RelativeLayout
 
 Builder.load_file('kivy_relativelayout_3.kv')
 Window.size = (200, 200)
 
 
-class KivyRelativeLayout(RelativeLayout):
+class KivyRelativeLayout(BoxLayout):
     pass
 
 
