@@ -1,0 +1,7 @@
+#: import Button kivy.uix.button.Button
+
+<KivyStackLayout>:
+    orientation: 'lr-tb'
+
+    on_kv_post:
+        [self.add_widget(Button(text=chr(i + 65), width=(i + 1) * 10, size_hint=(None, 0.2), on_press=self.on_button_pressed)) for i in range(10)]
