@@ -11,8 +11,8 @@ class KivyStackLayout(StackLayout):
     def __init__(self):
         super().__init__()
         self.orientation = 'lr-tb'
-        #self.orientation = 'rl-bt'
-        #self.orientation = 'tb-lr'
+        # self.orientation = 'rl-bt'
+        # self.orientation = 'tb-lr'
         self.init_ui()
 
     def init_ui(self):
