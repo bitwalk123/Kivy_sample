@@ -1,24 +1,18 @@
 <KivyRelativeLayout>:
-    Widget:
-        size_hint: None, None
-        size: 80, 80
-        pos: 40, 40
-
-        canvas:
-            Color:
-                rgba: 1, 1, 1, 1
-            Rectangle:
-                pos: self.pos
-                size: self.size
+    Button:
+        id: btn_a
+        text: "ボタンＡ"
+        size_hint: (.4, .2)
+        pos_hint: {'x': 0.05, 'y': 0.05}
+        on_press: root.on_button_pressed(self)
 
     RelativeLayout:
-        size_hint: None, None
-        size: 80, 80
-        pos: 40, 40
+        size: 100, 100
+        pos: 100, 100
 
-        canvas:
-            Color:
-                rgba: 1, 0, 0, 0.5
-            Rectangle:
-                pos: self.pos  # incorrect
-                size: self.size
+        Button:
+            id: btn_b
+            text: "ボタンＢ"
+            size_hint:(.4, .2)
+            pos_hint:{'x': 0.05, 'y': 0.05}
+            on_press: root.on_button_pressed(self)

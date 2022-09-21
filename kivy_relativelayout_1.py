@@ -13,7 +13,8 @@ Window.size = (200, 200)
 
 
 class KivyRelativeLayout(FloatLayout):
-    pass
+    def on_button_pressed(self, instance):
+        print('%s がクリックされました。' % instance.text)
 
 
 class ExampleApp(App):
